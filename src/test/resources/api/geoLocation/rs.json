@@ -1,0 +1,30 @@
+{
+  "ip": "type:String",
+  "type": "type:String",
+  "continent_code": "type:String",
+  "continent_name": "type:String",
+  "country_code": "type:String",
+  "country_name": "type:String",
+  "region_code": "type:String",
+  "region_name": "type:String",
+  "city": "type:String",
+  "zip": "type:String",
+  "latitude": "type:Double",
+  "longitude": "type:Double",
+  "location": {
+    "geoname_id": "type:Integer",
+    "capital": "type:String",
+    "languages": [
+      {
+        "code": "type:String",
+        "name": "type:String",
+        "native": "type:String"
+      }
+    ],
+    "country_flag": "type:String",
+    "country_flag_emoji": "type:String",
+    "country_flag_emoji_unicode": "type:String",
+    "calling_code": "type:String",
+    "is_eu": "type:Boolean"
+  }
+}
