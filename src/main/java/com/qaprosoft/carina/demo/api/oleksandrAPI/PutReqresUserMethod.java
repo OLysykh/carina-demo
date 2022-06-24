@@ -24,14 +24,14 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpMethodType;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
-@Endpoint(url = "${base_url}/users", methodType = HttpMethodType.POST)
-@RequestTemplatePath(path = "api/reqres/post/rq.json")
-@ResponseTemplatePath(path = "api/reqres/post/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.CREATED_201)
+@Endpoint(url = "${base_url}/users/2", methodType = HttpMethodType.PUT)
+@RequestTemplatePath(path = "api/reqres/put/rq.json")
+@ResponseTemplatePath(path = "api/reqres/put/rs.json")
+@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class PutReqresUserMethod extends AbstractApiMethodV2 {
 
     public PutReqresUserMethod() {
-        super("api/reqres/post/rq.json", "api/reqres/post/rs.json");
+        super("api/reqres/put/rq.json", "api/reqres/put/rs.json");
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
     }
 }

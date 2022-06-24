@@ -162,4 +162,31 @@ public class APIOleksandrTest implements IAbstractTest {
         api.validateResponse();
     }
 
+    @Test()
+    @MethodOwner(owner = "qpsdemo")
+    public void testPutReqUser() throws Exception {
+        LOGGER.info("test");
+        setCases("4555,54545");
+        PutReqresUserMethod api = new PutReqresUserMethod();
+        AtomicInteger counter = new AtomicInteger(0);
+
+        api.callAPIWithRetry()
+                .withLogStrategy(APIMethodPoller.LogStrategy.ALL)
+                .peek(rs -> counter.getAndIncrement())
+                .until(rs -> counter.get() == 2)
+                .pollEvery(1, ChronoUnit.SECONDS)
+                .stopAfter(10, ChronoUnit.SECONDS)
+                .execute();
+        api.validateResponse();
+    }
+    @Test()
+    @MethodOwner(owner = "weather")
+    public void testGetWeather(){
+        GetWeather api = new GetWeather();
+        api.callAPIExpectSuccess();
+        api.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        api.validateResponseAgainstSchema("api/weather/rs.schema");
+
+    }
+
 }
