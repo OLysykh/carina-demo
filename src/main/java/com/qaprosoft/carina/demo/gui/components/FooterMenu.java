@@ -22,7 +22,7 @@ import org.openqa.selenium.support.FindBy;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
 import com.qaprosoft.carina.demo.gui.pages.CompareModelsPage;
-import com.qaprosoft.carina.demo.gui.oleksandr.pages.HomePage;
+import com.qaprosoft.carina.demo.gui.oleksandr.sauce.pages.HomePage;
 import com.qaprosoft.carina.demo.gui.pages.NewsPage;
 
 public class FooterMenu extends AbstractUIObject {

@@ -1,9 +1,8 @@
-package com.qaprosoft.carina.demo.gui.oleksandr.pages;
+package com.qaprosoft.carina.demo.gui.oleksandr.sauce.pages;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 
 import org.apache.commons.collections.CollectionUtils;
-import org.assertj.core.internal.bytebuddy.implementation.bytecode.Throw;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.slf4j.Logger;

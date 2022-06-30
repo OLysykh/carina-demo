@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.gui.oleksandr.pages;
+package com.qaprosoft.carina.demo.gui.oleksandr.sauce.pages;
 
 import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;

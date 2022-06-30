@@ -1,13 +1,8 @@
-package com.qaprosoft.carina.demo.gui.oleksandr.pages;
+package com.qaprosoft.carina.demo.gui.oleksandr.sauce.pages;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import org.apache.commons.collections.CollectionUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class CartPage extends SaucedemoAbstractPage {
 

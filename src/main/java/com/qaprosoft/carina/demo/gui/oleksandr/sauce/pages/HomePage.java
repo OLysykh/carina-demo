@@ -1,9 +1,8 @@
-package com.qaprosoft.carina.demo.gui.oleksandr.pages;
+package com.qaprosoft.carina.demo.gui.oleksandr.sauce.pages;
 
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
